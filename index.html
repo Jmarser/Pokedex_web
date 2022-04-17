@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Jmarser">
+    <title>Pokedex ultra</title>
+
+    <link rel="shortcut icon" href="./img/pokeball-ico.ico" type="image/x-icon">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="content-pokedex">
+            <button class="img-pokedex">
+                <img src="./img/pokedex.png" alt="">
+            </button>
+            <div class="generacion">
+                <div class="arrow-left" id="arrow-left"></div>
+                <div class="order" id="textGen">Gen <span id="gen">1</span></div>
+                <div class="arrow-right" id="arrow-right"></div>
+                <button class="generation__button"  id="btn-pokedex"><span class="material-icons-sharp">search</span></button>
+            </div>
+        </div>
+        <div class="content-search">
+            <form action="" class="search-pokemon">
+                <input type="text" name="nombre" id="nombre" placeholder="nombre o id pokemon" autocomplete="off">
+                <button class="btn-search-pokemon" id="btn-search-pokemon">
+                    <img src="./img/pokeball.png" alt="">
+                </button>
+            </form>
+        </div>
+    </header>
+    <main>
+        <div class="pokedex-container" id="poke_container">
+
+        </div>
+        <div class="modal-container" id="modal-container">
+            <div class="modal" id="modal">
+                <button class="btn_modal" id="btn-modal">X</button>
+                <div id="card-modal" class="card_pokemon-modal">
+                    <div class="principal">
+                        <h3 class="name-pokemon" id="name-modal"></h3>
+                        <div class="img_pokemon">
+                            <img id="img-modal" src="" alt="">
+                        </div>
+                        <h4 id="num-modal" class="num-pokemon-modal"></h4>
+                        <h4 id="tipo-modal" class="tipo-pokemon"></h4>
+                    </div>
+                    <div class="stats-pokemon-modal" id="estadisticas">
+                        <h4 class="stats-header">Estadísticas iniciales</h4>
+                        <!--
+                        <div class="stat-container">
+                            <span class="stat-name">Ataque</span>
+                            <span class="stat-valor">80</span>
+                        </div>
+                        <div class="stat-container">
+                            <span class="stat-name">Ataque</span>
+                            <span class="stat-valor">80</span>
+                        </div>
+                        <div class="stat-container">
+                            <span class="stat-name">Ataque</span>
+                            <span class="stat-valor">80</span>
+                        </div>
+                        <div class="stat-container">
+                            <span class="stat-name">Ataque</span>
+                            <span class="stat-valor">80</span>
+                        </div>
+                        <div class="stat-container">
+                            <span class="stat-name">Ataque</span>
+                            <span class="stat-valor">80</span>
+                        </div>
+                        <div class="stat-container">
+                            <span class="stat-name">Ataque</span>
+                            <span class="stat-valor">80</span>
+                        </div>
+                        -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
